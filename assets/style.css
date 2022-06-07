@@ -1,0 +1,118 @@
+/*Обнуление START*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,
+ol,
+li{
+  list-style: none;
+}
+
+img{
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  background: #b5b8bf;
+}
+
+/*Обнуление END*/
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url(../assets/src/Manrope/Manrope-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url(../assets/src/Manrope/Manrope-Medium.ttf);
+}
+
+* {
+  font-family: "Manrope-Regular";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.groceryList {
+  min-height: 80vh;
+  width: 50vh;
+  background: #eceaed;
+  background-image: url("img/basket.svg");
+  background-size: 60% auto;
+  background-position-x: -70px; 
+  background-position-y: 525px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow: #687389 0px 0px 0px 3px;
+  box-shadow: #fff2c8 0px 0px 0px 3px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.groceryList__title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.groceryList__title h1 {
+  font-family: "Manrope-Medium";
+  font-size: 1.8rem;
+  color: #4e525d;
+}
+
+.groceryList__add input {
+  width: 100%;
+  font-size: 1.4rem;
+  background: none;
+  border-bottom: #b5b8bf 2px solid;
+}
+
+.groceryList__list {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.list__item {
+  line-height: 2.5rem;
+  list-style-type: disc;
+  cursor: pointer;
+}
+
+.delete {
+  text-decoration: line-through;
+}
+
+input {
+  outline: none;
+}
